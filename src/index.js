@@ -15,11 +15,33 @@ const root = ReactDOM.createRoot(el);
 
 function App() {
 
-    let message = 'bye There';
-    if (Math.random() > 0.5) {
-        message = 'hello there';
-    }
-    return <h1>Generating random response: {message}</h1>
+    // Converting Html into Jsx examples:
+    // 1) Always in camelCase
+    // 2) Always in Square brackets
+    // 3) In Boolean 'true' just by property name. false should be written with curly braces. 
+    // 4) ClassName instead of class
+    // 5) Inline styling are provided as objects
+
+    //////////////////////// Applying All Jsx Rules below: ////////////////////////////////////////////////////////////////
+
+    // All prop names follow camelCase capitalization
+
+    // Number attributes use curly braces
+
+    // Booleans of 'true' can be written with just the property name
+
+    // The 'class' attribute is written as 'className'
+
+    return (
+        <div className="wrapper">
+            <textarea
+                readOnly
+                maxLength={3}
+                spellCheck
+                style={{ backgroundColor: "gray" }}
+            />
+        </div>
+    );
 }
 
 // 5) Show the Component on the Screen
